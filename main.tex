@@ -1,0 +1,154 @@
+\pdfoutput=1
+\documentclass[12pt,a4paper]{article}
+
+% Variables that controls behaviour
+\usepackage{ifthen} % for conditional statements
+\newboolean{pdflatex}
+\setboolean{pdflatex}{true} % False for eps figures 
+
+\newboolean{articletitles}
+\setboolean{articletitles}{true} % False removes titles in references
+
+\newboolean{uprightparticles}
+\setboolean{uprightparticles}{false} %True for upright particle symbols
+
+\newboolean{inbibliography}
+\setboolean{inbibliography}{false} %True once you enter the bibliography
+
+% Define titles and authors here. It will then be used both in metadata and in
+% what is printed on the front page.
+\def\paperauthors{The Heavy Flavor Averaging Group (HFLAV)} % Leave as is for PAPER and CONF
+\def\paperasciititle{HFLAV submission to The European Strategy for Particle Physics} % Set ASCII title here
+\def\papertitle{HFLAV submission to The European Strategy for Particle Physics} % Latex formatted title
+\def\paperkeywords{{High Energy Physics}, {HFLAV}, {Flavour physics}} % Comma separated list
+\def\papercopyright{2018 HFLAV} % new since 9/Apr/2018
+\def\paperlicence{CC-BY-4.0 licence}
+\def\paperlicenceurl{https://creativecommons.org/licenses/by/4.0/}
+
+\input{preamble}
+\usepackage{longtable} % only for template; not usually to be used in PAPERs
+
+\begin{document}
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Title     %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\setcounter{page}{1}
+\thispagestyle{empty}
+\renewcommand\Affilfont{\itshape\small}
+
+\title{
+  \papertitle
+\vskip0.20in
+\large{\it \paperauthors}
+%%\author{set one author to remove the spurious ``immediate''}
+\vspace*{-0.20in}}
+
+% Authors -------------------------------------------------
+\author[1]{Y.~Amhis}\affil[1]{LAL, Universit\'{e} Paris-Sud, CNRS/IN2P3, Orsay, France}
+\author[2]{Sw.~Banerjee}\affil[2]{University of Louisville, Louisville, Kentucky, USA}
+\author[3]{E.~Ben-Haim}\affil[3]{LPNHE, Universit\'{e} Pierre et Marie Curie, Universit\'{e} Paris Diderot, CNRS/IN2P3, Paris, France}
+\author[39]{M.~Bona}\affil[39]{TBD}
+\author[5]{A.~Bozek}\affil[5]{H. Niewodniczanski Institute of Nuclear Physics, Krak\'{o}w, Poland}
+\author[6]{C.~Bozzi}\affil[6]{Universita e INFN, Ferrara, Ferrara, Italy}
+\author[39]{J.~Brodzicka}
+\author[5,7]{M.~Chrz\k{a}szcz}\affil[7]{Physik-Institut, Universit\"at Z\"urich, Z\"urich, Switzerland}
+\author[4]{J.~Dingfelder}
+\author[23]{U.~Egede}
+\author[8]{M.~Gersabeck}\affil[8]{School of Physics and Astronomy, University of Manchester, Manchester, UK}
+\author[9]{T.~Gershon}\affil[9]{Department of Physics, University of Warwick, Coventry, UK}
+\author[39]{L.~Gibbons}
+\author[11]{P.~Goldenzweig}\affil[11]{Institut f\"{u}r Experimentelle Kernphysik, Karlsruher Institut f\"{u}r Technologie, Karlsruhe, Germany}
+\author[13]{K.~Hayasaka}\affil[13]{Niigata University, Niigata, Japan}
+\author[14]{H.~Hayashii}\affil[14]{Nara Women's University, Nara, Japan}
+\author[39]{D.~Johnson}
+\author[15]{M.~Kenzie}\affil[15]{Cavendish Laboratory, University of Cambridge, Cambridge, UK}
+\author[16]{T.~Kuhr}\affil[16]{Ludwig-Maximilians-University, Munich, Germany}
+\author[10]{O.~Leroy}
+\author[39]{H.~Li}
+\author[17,18]{A.~Lusiani}\affil[17]{Scuola Normale Superiore, Pisa, Italy}\affil[18]{Sezione INFN di Pisa, Pisa, Italy}
+\author[39]{V.~L\"{u}th}
+\author[13]{K.~Miyabayashi}
+\author[20]{P.~Naik}\affil[20]{H.H.~Wills Physics Laboratory, University of Bristol, Bristol, UK}
+\author[21]{T.~Nanut}\affil[21]{J. Stefan Institute, Ljubljana, Slovenia}
+\author[22]{A.~Oyanguren Campos}\affil[22]{Instituto de Fisica Corpuscular, Centro Mixto Universidad de Valencia - CSIC, Valencia, Spain}
+\author[23]{M.~Patel}\affil[23]{Imperial College London, London, UK}
+\author[39]{A.~Pompili}
+\author[18]{M.~Rama}
+\author[26]{M.~Roney}\affil[26]{University of Victoria, Victoria, British Columbia, Canada}
+\author[27]{M.~Rotondo}\affil[27]{Laboratori Nazionali dell'INFN di Frascati, Frascati, Italy}
+\author[28]{O.~Schneider}\affil[28]{Institute of Physics, Ecole Polytechnique F\'{e}d\'{e}rale de Lausanne (EPFL), Lausanne, Switzerland}
+\author[29]{C.~Schwanda}\affil[29]{Institute of High Energy Physics, Vienna, Austria}
+\author[30]{A.~J.~Schwartz}\affil[30]{University of Cincinnati, Cincinnati, Ohio, USA}
+\author[31,32]{B.~Shwartz}\affil[31]{Budker Institute of Nuclear Physics (SB RAS), Novosibirsk, Russia}\affil[32]{Novosibirsk State University, Novosibirsk, Russia}
+\author[10]{J.~Serrano}
+\author[39]{A.~Soffer}
+\author[18]{D.~Tonelli}
+\author[36]{P.~Urquijo}\affil[36]{School of Physics, University of Melbourne, Melbourne, Victoria, Australia}
+\author[37]{R.~Van Kooten}\affil[37]{Indiana University, Bloomington, Indiana, USA}
+\author[38]{J.~Yelton}\affil[38]{University of Florida, Gainesville, Florida, USA}
+
+\maketitle
+\vspace{\fill}
+
+% Abstract -----------------------------------------------
+\begin{abstract}
+  \noindent
+  This is the abstract.
+\end{abstract}
+
+\vspace*{2.0cm}
+
+\vspace{\fill}
+
+{\footnotesize 
+% Edit macro in main.tex to keep metadata correct
+\centerline{\copyright~\papercopyright. \href{\paperlicenceurl}{\paperlicence}.}}
+\vspace*{2mm}
+
+
+%  empty page follows the title page ----
+\newpage
+\setcounter{page}{2}
+\mbox{~}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%  EOD OF TITLE PAGE  %%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\renewcommand{\thefootnote}{\arabic{footnote}}
+\setcounter{footnote}{0}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%% Main text %%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\pagestyle{plain} % restore page numbers for the main text
+\setcounter{page}{1}
+\pagenumbering{arabic}
+
+%% Uncomment during review phase. 
+%% Comment before a final submission.
+\linenumbers
+
+
+\section{Introduction}
+\label{sec:Introduction}
+ 
+\begin{itemize}
+    \item What HFLAV is and its history.
+    \item Importance of supporting research groups working in flavour physics, not just the facilities.
+    \item Importance of more than one heavy flavour physics experiment.
+    \item Importance of the LHCb phase II upgrade
+    \item That any new facility (FCC, CepC, …) should include considerations about flavour physics facilities.
+    \item Mention how flavour physics works as a community
+    \item How flavour physics is informing the high pT physics.
+\end{itemize}
+
+\setboolean{inbibliography}{true}
+\bibliographystyle{LHCb}
+\bibliography{main,standard,LHCb-PAPER,LHCb-CONF,LHCb-DP,LHCb-TDR}
+ 
+\end{document}
