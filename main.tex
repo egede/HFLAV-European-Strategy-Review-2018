@@ -18,83 +18,86 @@
 % Define titles and authors here. It will then be used both in metadata and in
 % what is printed on the front page.
 \def\paperauthors{The Heavy Flavor Averaging Group (HFLAV)} % Leave as is for PAPER and CONF
-\def\paperasciititle{HFLAV submission to The European Strategy for Particle Physics} % Set ASCII title here
-\def\papertitle{HFLAV submission to The European Strategy for Particle Physics} % Latex formatted title
-\def\paperkeywords{{High Energy Physics}, {HFLAV}, {Flavour physics}} % Comma separated list
+\def\paperasciititle{HFLAV input to the update of the European Strategy for Particle Physics} % Set ASCII title here
+\def\papertitle{HFLAV input to the update of the \\ European Strategy for Particle Physics} % Latex formatted title
+\def\paperkeywords{{High Energy Physics}, {HFLAV}, {flavor physics}} % Comma separated list
 \def\papercopyright{2018 HFLAV} % new since 9/Apr/2018
 \def\paperlicence{CC-BY-4.0 licence}
 \def\paperlicenceurl{https://creativecommons.org/licenses/by/4.0/}
 
 \input{preamble}
 \usepackage{bm}
+%\usepackage{titling}
+%\usepackage{authblk}
 
 \begin{document}
 %%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%% Title     %%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
-\setcounter{page}{1}
-\thispagestyle{empty}
 \renewcommand\Affilfont{\itshape\small}
 
-\title{
-  \vspace*{-1cm}
-  \papertitle
-\vskip0.20in
-\large{\it \paperauthors}
 %%\author{set one author to remove the spurious ``immediate''}
-\vspace*{-0.20in}}
-
 % Authors -------------------------------------------------
 \author[1]{Y.~Amhis}\affil[1]{LAL, Universit\'{e} Paris-Sud, CNRS/IN2P3, Orsay, France}
 \author[2]{Sw.~Banerjee}\affil[2]{University of Louisville, Louisville, Kentucky, USA}
-\author[3]{E.~Ben-Haim}\affil[3]{LPNHE, Universit\'{e} Pierre et Marie Curie, Universit\'{e} Paris Diderot, CNRS/IN2P3, Paris, France}
-\author[39]{M.~Bona}\affil[39]{TBD}
+\author[3]{E.~Ben-Haim}\affil[3]{LPNHE, Sorbonne Universit\'e, Paris Diderot Sorbonne Paris Cit\'e, CNRS/IN2P3, Paris, France}
+\author[4]{M.~Bona}\affil[4]{School of Physics and Astronomy, Queen Mary University of London, London, UK}
 \author[5]{A.~Bozek}\affil[5]{H. Niewodniczanski Institute of Nuclear Physics, Krak\'{o}w, Poland}
-\author[6]{C.~Bozzi}\affil[6]{Universita e INFN, Ferrara, Ferrara, Italy}
-\author[39]{J.~Brodzicka}
-\author[5,7]{M.~Chrz\k{a}szcz}\affil[7]{Physik-Institut, Universit\"at Z\"urich, Z\"urich, Switzerland}
-\author[4]{J.~Dingfelder}
-\author[23]{U.~Egede}
-\author[8]{M.~Gersabeck}\affil[8]{School of Physics and Astronomy, University of Manchester, Manchester, UK}
-\author[9]{T.~Gershon}\affil[9]{Department of Physics, University of Warwick, Coventry, UK}
-\author[39]{L.~Gibbons}
-\author[11]{P.~Goldenzweig}\affil[11]{Institut f\"{u}r Experimentelle Kernphysik, Karlsruher Institut f\"{u}r Technologie, Karlsruhe, Germany}
+\author[6]{C.~Bozzi}\affil[6]{INFN Sezione di Ferrara, Ferrara, Italy}
+\author[5]{J.~Brodzicka}
+\author[7]{M.~Chrzaszcz} \affil[7]{European Organization for Nuclear Research (CERN), Geneva, Switzerland}
+\author[8]{J.~Dingfelder}\affil[8]{University of Bonn, Bonn, Germany}
+\author[9]{U.~Egede}\affil[9]{Imperial College London, London, UK}
+\author[10]{M.~Gersabeck}\affil[10]{School of Physics and Astronomy, University of Manchester, Manchester, UK}
+\author[11]{T.~Gershon}\affil[11]{Department of Physics, University of Warwick, Coventry, UK}
+\author[12]{P.~Goldenzweig}\affil[12]{Institut f\"ur Experimentelle Teilchenphysik, Karlsruher Institut f\"ur Technologie, Karlsruhe, Germany}
 \author[13]{K.~Hayasaka}\affil[13]{Niigata University, Niigata, Japan}
 \author[14]{H.~Hayashii}\affil[14]{Nara Women's University, Nara, Japan}
-\author[39]{D.~Johnson}
+\author[7]{D.~Johnson}
 \author[15]{M.~Kenzie}\affil[15]{Cavendish Laboratory, University of Cambridge, Cambridge, UK}
 \author[16]{T.~Kuhr}\affil[16]{Ludwig-Maximilians-University, Munich, Germany}
-\author[10]{O.~Leroy}
-\author[39]{H.~Li}
-\author[17,18]{A.~Lusiani}\affil[17]{Scuola Normale Superiore, Pisa, Italy}\affil[18]{Sezione INFN di Pisa, Pisa, Italy}
-\author[39]{V.~L\"{u}th}
-\author[13]{K.~Miyabayashi}
-\author[20]{P.~Naik}\affil[20]{H.H.~Wills Physics Laboratory, University of Bristol, Bristol, UK}
-\author[21]{T.~Nanut}\affil[21]{J. Stefan Institute, Ljubljana, Slovenia}
-\author[22]{A.~Oyanguren Campos}\affil[22]{Instituto de Fisica Corpuscular, Centro Mixto Universidad de Valencia - CSIC, Valencia, Spain}
-\author[23]{M.~Patel}\affil[23]{Imperial College London, London, UK}
-\author[39]{A.~Pompili}
-\author[18]{M.~Rama}
-\author[26]{M.~Roney}\affil[26]{University of Victoria, Victoria, British Columbia, Canada}
+\author[17]{O.~Leroy}\affil[17]{Aix Marseille Univ, CNRS/IN2P3, CPPM, Marseille, France}
+\author[18,19]{H.~B.~Li}\affil[18]{Institute of High Energy Physics, Beijing 100049, People’s Republic of China}\affil[19]{University of Chinese Academy of Sciences, Beijing 100049, People’s Republic of China}
+\author[20,21]{A.~Lusiani}\affil[20]{Scuola Normale Superiore, Pisa, Italy}\affil[21]{INFN Sezione di Pisa, Pisa, Italy}
+\author[14]{K.~Miyabayashi}
+\author[22]{P.~Naik}\affil[22]{H.H.~Wills Physics Laboratory, University of Bristol, Bristol, UK}
+\author[23]{T.~Nanut}\affil[23]{Institute of Physics, Ecole Polytechnique F\'{e}d\'{e}rale de Lausanne (EPFL), Lausanne, Switzerland}
+%\author[22]{A.~Oyanguren Campos}\affil[22]{Instituto de Fisica Corpuscular, Centro Mixto Universidad de Valencia - CSIC, Valencia, Spain}
+\author[9]{M.~Patel}
+\author[24,25]{A.~Pompili}\affil[24]{Universita' di Bari Aldo Moro, Bari, Italy}\affil[25]{INFN Sezione di Bari, Bari, Italy}
+\author[26]{M.~Rama}\affil[26]{INFN Sezione di Pisa, Pisa, Italy}
+%\author[26]{M.~Roney}\affil[26]{University of Victoria, Victoria, British Columbia, Canada}
 \author[27]{M.~Rotondo}\affil[27]{Laboratori Nazionali dell'INFN di Frascati, Frascati, Italy}
-\author[28]{O.~Schneider}\affil[28]{Institute of Physics, Ecole Polytechnique F\'{e}d\'{e}rale de Lausanne (EPFL), Lausanne, Switzerland}
-\author[29]{C.~Schwanda}\affil[29]{Institute of High Energy Physics, Vienna, Austria}
-\author[30]{A.~J.~Schwartz}\affil[30]{University of Cincinnati, Cincinnati, Ohio, USA}
-\author[31,32]{B.~Shwartz}\affil[31]{Budker Institute of Nuclear Physics (SB RAS), Novosibirsk, Russia}\affil[32]{Novosibirsk State University, Novosibirsk, Russia}
-\author[10]{J.~Serrano}
-\author[39]{A.~Soffer}
-\author[18]{D.~Tonelli}
-\author[36]{P.~Urquijo}\affil[36]{School of Physics, University of Melbourne, Melbourne, Victoria, Australia}
-\author[37]{R.~Van Kooten}\affil[37]{Indiana University, Bloomington, Indiana, USA}
-\author[38]{J.~Yelton}\affil[38]{University of Florida, Gainesville, Florida, USA}
+\author[23]{O.~Schneider}
+\author[28]{C.~Schwanda}\affil[28]{Institute of High Energy Physics, Vienna, Austria}
+\author[29]{A.~J.~Schwartz}\affil[29]{University of Cincinnati, Cincinnati, Ohio, USA}
+\author[30,31]{B.~Shwartz}\affil[30]{Budker Institute of Nuclear Physics (SB RAS), Novosibirsk, Russia}\affil[31]{Novosibirsk State University, Novosibirsk, Russia}
+\author[17]{J.~Serrano}
+\author[32]{A.~Soffer}\affil[32]{Tel Aviv University, Tel Aviv, Israel}
+\author[33]{D.~Tonelli}\affil[33]{INFN Sezione di Trieste, Trieste, Italy}
+\author[34]{P.~Urquijo}\affil[34]{School of Physics, University of Melbourne, Melbourne, Victoria, Australia}
+\author[35]{R.~Van Kooten}\affil[35]{Indiana University, Bloomington, Indiana, USA}
+\author[36]{J.~Yelton}\affil[36]{University of Florida, Gainesville, Florida, USA}
 
+\title{\papertitle \\ \large \paperauthors\\
+\href{mailto:hflav-conveners@cern.ch}{hflav-conveners@cern.ch}}
+\date{}
 \maketitle
+
+
+% Abstract -----------------------------------------------
+\begin{abstract}
+  \noindent
+    The Heavy Flavor Averaging Group provides with this document input to
+    the European Strategy for Particle Physics. Research in heavy-flavor physics is an essential component of the particle-physics program, both within and beyond the Standard Model. To fully realize the potential of the field, we believe the strategy should include strong support for
+    the ongoing experimental and theoretical heavy-flavor research, future upgrades of existing facilities, and significant heavy-flavor capabilities at future colliders, including dedicated experiments.
+\end{abstract}
 
 {\footnotesize 
 % Edit macro in main.tex to keep metadata correct
 \centerline{\copyright~\papercopyright. \href{\paperlicenceurl}{\paperlicence}.}}
-\vspace*{1cm}
+\vspace*{2mm}
 
 \renewcommand{\thefootnote}{\arabic{footnote}}
 \setcounter{footnote}{0}
@@ -104,60 +107,117 @@
 %%%%% Main text %%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%
 
-\pagestyle{plain} % restore page numbers for the main text
-\setcounter{page}{1}
-\pagenumbering{arabic}
-
 %% Uncomment during review phase. 
 %% Comment before a final submission.
-\linenumbers
+%\linenumbers
 \parskip=2mm
 
-\noindent The Heavy Flavor Averaging Group (HFLAV)~\cite{HFLAV16} was formed in 2002 to 
+\noindent 
+The Heavy Flavor Averaging Group (HFLAV)~\cite{HFLAV-web} was formed in 2002 to 
 continue the activities of the LEP Heavy Flavor Steering 
-Group~\cite{Abbaneo:2000ej_mod,*Abbaneo:2001bv_mod_cont}. 
-The group is responsible for calculating averages of measurements of beauty- and charm-hadron properties from all experiments around the globe. With this perspective, the members of HFLAV are well 
-placed to comment on the future importance of flavour physics. \textbf{In this submission we make the argument for support of heavy-flavour physics in both the near term and the far future. Specific recommendations are in bold.}
+Group~\cite{Abbaneo:2001bv_mod_cont}. 
+HFLAV is responsible for calculating world averages of measurements of 
+beauty-hadron, charm-hadron and tau-lepton properties from current and 
+past experiments, and provides a comprehensive resource for the field in terms of web pages 
+and full documentation of results. The most recent compilation of our results appears in Ref.~\cite{HFLAV16}. Many of our world averages are used by the Particle Data Group. 
+With this perspective, we take the opportunity to comment on the importance of future heavy-flavor physics research. \textbf{In this document, we make the argument for support of heavy-flavor physics in both the near term and the far future.} 
 
-In the next decade, the majority of new $b$-physics measurements will come from the \lhcb and \belletwo experiments. Following upgrade~I, \lhcb will benefit from unprecedently large samples of all types of $b$-hadrons, and \belletwo will produce $B$-meson pairs with well known kinematics from the initial state. To give an example of their complementarity, \lhcb will provide the most accurate measurements of angular distributions in exclusive electroweak-penguin decays with charged leptons, while \belletwo will perform the corresponding inclusive studies and will measure the branching fractions of the related decays $\decay{\Bz}{\Kstarz \neu\neub}$. The combination of these results places very strong limits on the nature of physics involving new couplings to leptons, much more than the individual measurements. \textbf{The dual approach of conducting heavy-flavour physics in both the controlled} $\bm{\ep \en}$ \textbf{environment and in the much higher statistics hadronic environment should be supported into the future.}
+Flavor physics is among the central foundations of the Standard Model
+(SM). Indeed, many advances in the construction of the SM originated
+from research into flavor physics. This included the three-generation prediction of the
+Kobayashi-Maskawa mechanism, the universality of the gauge interactions, the high
+masses of the top quark and the weak gauge bosons, and the presence of
+large charge-parity (\CP) violation in beauty hadrons. Similarly, heavy-flavor physics is
+closely tied to questions that aim to unravel the physics beyond the SM
+(BSM). Some of these questions, and the ways in which current research
+in heavy-flavor physics studies them, are as follows:
+%
+\begin{itemize}
+\item The baryon asymmetry of the universe necessitates \CP violation
+  far beyond that provided by the SM. Precise measurements of \CP
+  violation provide unique access to \CP violation in BSM
+  physics. Processes in which the SM predicts zero or very small \CP
+  violation can be particularly sensitive to BSM amplitudes. These
+  include decays of the tau lepton and specific charm- and
+  beauty-hadron decays.
 
-Precision flavor-physics measurements at the
-\tevatron demonstrated the potential of hadron-collider experiments in this area. Following this initial success, the \lhcb experiment pushed the boundaries of what can be done at a hadron collider well beyond its original goals.
-Given the current results on flavor physics and energy-frontier physics, the case for probing new physics in heavy-flavour decays is stronger than ever. \lhcb upgrade~II~\cite{LHCb-PII-Physics} is proposing to create an experiment that will be able to collect data at a luminosity twice that of upgrade~I. This will lead to large jumps in the sensitivity in key areas, such as \CP violation in the charm and beauty systems, angular observables in penguin decays, and the study of lepton universality. The explored mass scale will grow by close to a factor two relative to that of the upgrade~I program. The theoretical uncertainties related to the measurements are under control in all key channels. \textbf{Support for the construction of 
-\lhcb upgrade II and its exploitation though the complete high luminosity \lhc period is essential.}
+\item The origins of the three generations of fermions and of the
+  Yukawa couplings that distinguish between them lie in BSM
+  physics. This is probed by precision studies of the
+  Cabibbo-Kobayashi-Maskawa (CKM) matrix, which test the
+  three-generation picture and the SM hypothesis that quark-flavor nonuniversality depends on only the four parameters of the CKM matrix.
 
-Measurements conducted in the past few years have raised the question of whether semileptonic $b$-hadron decays are purely governed by SM physics. 
-In particular, \lhcb measurements of the
-angular distribution in $\decay{\Bd}{\Kstarz\mup\mun}$, as well as the ratios $R_{K^{(*)}}$ between the branching fractions of the decays $\decay{B}{K^{(\ast)}\mup\mun}$ and $\decay{B}{K^{(\ast)}\ep\en}$, are in tension with the SM predictions, suggesting potential new physics in particular Wilson coefficients. Tensions exist also in the ratios of branching fractions of $b\to c\tau\nu$ decays. This has  led to a large number of models that introduce new flavor-violating gauge bosons or leptoquarks. 
-%The explosion in the searches for direct production of these new particles within \atlas and \cms in the last few years have illustrated how heavy flavour physics informs and motivates the search for new physics through the direct production of new states. 
-Constraints from flavor physics indicate that direct detection of these states at LHC will be difficult or impossible, while a 100\tev $pp$ hadron collider would be able to discover these particles in the majority of parameter space of the proposed models~\cite{Allanach:2017bta}. This demonstrates the role of flavor physics in informing future energy-frontier facilities. 
-\textbf{It is imperative that planning of new facilities include consideration of the ways in which heavy-flavour 
-physics can be further explored there.} 
-For a future circular collider, this could be via collection of a large number of $e^+e^-\to Z$ events, as well as a $pp$ flavour-physics experiment along the
-lines of \lhcb.
-%, a fixed target facility, 
-The abundance of measurements that have
-been carried out at \lhcb makes it clear that \textbf{at a hadron collider, there is a huge advantage to having a
-dedicated flavour-physics experiment with optimised detector and trigger, rather than running a flavour-physics programme as a parasitic activity of a high} $\bm \pt$ \textbf{experiment.}
+\item The SM gauge interactions are independent of flavor. However, the
+  flavor-nondiagonal Yukawa couplings motivate searching for
+  flavor-nonuniversal BSM interactions, which may arise from new
+  gauge bosons or scalars, and may also be related to the dark-matter puzzle.
+  Thus, it is important to test universality in heavy-flavor decays. In particular, lepton-flavor nonuniversality, lepton-flavor violation and lepton-number violation are unambiguous and sensitive probes of BSM physics. 
+  Similarly, flavor-changing neutral currents (FCNCs), which in the SM occur only
+  at loop level, are very sensitive to the presence of heavy new states. 
+\end{itemize}
 
-The strategy of particle physics is not only about which new facilities should be funded but also about funding
-the research to be carried out at those facilities. Across Europe there are 61 groups involved in heavy flavour
-physics on the \lhcb experiment, YY on the \belletwo experiment, 17 on the \besiii experiment, and a
-significant number on \atlas and \cms. In addition to this there is a large number
-of theory groups working on the phenomenology of heavy flavour decays. The data analyses in these
-experiments are 
-often performed in relatively small groups at universities and government labs and can take multiple 
-years to
-finish due to their high complexity. The analyses also typically involve detailed and specific collaboration
-with phenomenologists in terms of obtaining information that is optimised for interpretation. 
-For these reasons
-the long term support of the experimental and theoretical groups involved in flavour physics is an essential
-part of exploiting the investment in the facilities and associated experiments. \textbf{The European strategy should make it clear
-that supporting particle physics is not only a matter of supporting CERN and other global laboratories 
-but also about supporting the individual experimental and theoretical research groups.}
+The sensitivity of heavy-flavor measurements leads to tight constraints on
+BSM physics, in many cases at energy scales that are far beyond
+those accessible at energy-frontier facilities. Examples of recent heavy-flavor results that have received a great deal of attention in the phenomenology and model-building literature include measurements of lepton-flavor universality
+and the observation of rare bottom-meson decays into $\mu^+\mu^-$. In turn, some of these measurements have motivated searches for new heavy mediators at the LHC~\cite{Sirunyan:2018kzh, *Sirunyan:2018jdk}. In at least some of the channels, studies show that only a 100~TeV collider will be able to cover most of the  model-parameter space allowed by the heavy-flavor constraints~\cite{Allanach:2017bta}.
+Thus, \textbf{heavy-flavor
+physics has far-reaching BSM sensitivity, as well as an important role 
+in informing research at current and future energy-frontier facilities.} 
+
+\textbf{Heavy-flavor physics provides a unique laboratory for studying the
+strong interaction.} In particular, a number of hadrons
+with nonstandard quantum numbers that contain charm or beauty quarks, such as the $X(3872)$ and the $Z_c^\pm(4430)$, 
+have been discovered in the past 15 years. Revealing new ways in which QCD forms bound states, these discoveries have opened up a very active area of hadronic-physics research.
+
+Heavy-flavor research is a major effort in Europe.
+Across the continent, there are 61 groups on the \lhcb experiment, 36 on the
+\belletwo experiment, and 17 on the \besiii experiment. In addition,
+a significant number of groups work on heavy-flavor physics within  \atlas and
+    \cms, and many European groups are leaders in the related theory.
+As in other areas of particle physics, data analysis in heavy-flavor physics is 
+often performed in small groups at universities and laboratories, involves detailed and specific collaboration with phenomenologists, and can 
+take several years to complete due to its high complexity. For these reasons,
+the long-term support of the experimental and theoretical groups that are involved in 
+heavy-flavor research and train the students and postdocs is essential for the success of the field and for the efficient exploitation of the investment in the facilities. 
+\textbf{A healthy research program requires support for CERN and 
+other global laboratories, 
+as well as the individual experimental and theoretical research
+groups throughout European universities and institutes.}
+
+In the past, successful heavy-flavor programs were carried out at the LEP experiments and SLD, the Tevatron experiments, and ARGUS and CLEO. BABAR and Belle dominated the field in the first decade of this century, and are still producing unique results. Currently, almost half the publications in  heavy-flavor physics originate from research at \lhcb, followed closely by \besiii and Belle, with fewer contributions from BABAR, \atlas and \cms. By far, the majority of beauty-hadron measurements in the next decade will come
+from  \lhcb and \belletwo.
+\lhcb benefits from large cross-sections for production of all types of beauty and charm hadrons and from precise timing that arises from the high boost of the produced particles. 
+\belletwo will exploit production of $B$-meson pairs with well known kinematics in a clean environment, allowing better reconstruction of photons, particularly from $\pi^0$ and $\eta$ decays. To give an example of their complementarity in one case of interest, \lhcb will 
+provide the most accurate measurements of angular distributions in exclusive electroweak-penguin decays with charged leptons and hadrons, while \belletwo will study
+the corresponding inclusive decays and exclusive decays with soft photons, and will measure the branching fractions 
+of the related decays $\decay{B}{K^{(\ast)}\nu\bar\nu}$. The combination of 
+these results will constitute a stringent test of BSM physics involving 
+new couplings to leptons and the $b$ quark. 
+Similarly, in charm physics, \lhcb and \belletwo will produce the majority of 
+high-statistics results, while BESIII, and possibly future charm-tau
+factories that are being studied in Russia and China,
+will exploit the $e^+e^-\to D^0 \bar 
+D^0$ process to perform quantum-correlation measurements. By contrast, the 
+physics of $\tau$ leptons will be dominated by \belletwo, and will offer unique probes of BSM physics. As an example, \belletwo will be sensitive to lepton-flavor violation in $\tau$ decays down to branching fractions of order $10^{-10}$.
+\textbf{The dual approach of conducting heavy-flavor physics in both 
+the controlled} $\bm{e^+ e^-}$ \textbf{environment and in the higher
+statistics hadronic environment should be supported both in the short term 
+and into the future.}
+
+Each generation of flavor-physics experiments involves significant technological advances and large luminosity increases. BABAR, Belle, and \lhcb have pushed the boundaries of the heavy-flavor physics that could be
+performed at $e^+ e^-$ colliders and in a hadron collider environment, respectively. Furthermore, \belletwo, which has just started, will collect 50 times more data than \belle by the middle of the next decade~\cite{Kou:2018nap}. On the same time scale, \lhcb will collect 5 times more data than its current sample. Beyond Run-4 of the LHC, the \lhcb Upgrade~II~\cite{LHCb-PII-Physics} is proposing to collect yet an order of magnitude more data,
+increasing the explored BSM mass scale by close to a factor two relative to that of the Upgrade~I program. The
+theoretical uncertainties related to the measurements are under control in most areas, while others require parallel developments in lattice QCD. The \belletwo experiment and SuperKEKB accelerator have also begun discussion of upgrade opportunities to extend the data sample beyond the currently planned 50~ab$^{-1}$, and possibly to introduce polarization on the electron beam.
+\textbf{Support for the construction and full exploitation of \lhcb Upgrade~II and upgrades of \belletwo is important for probing the flavor structure of BSM physics at significantly higher mass scales. }
+
+Heavy-flavor physics will continue to play this important role in the post-LHC era. 
+Experiments at a future high-luminosity $e^+ e^-$ collider operating at the $Z$ resonance would perform unique heavy-flavor studies in specific channels. Maximising the detector's ability in this area would probably require charged-hadron identification capability. 
+At a circular, high-energy $pp$ collider, heavy-flavor physics would be best studied with a dedicated experiment, along the lines of \lhcb, where the advantages of optimized detector and trigger have been demonstrated. \textbf{It is imperative that planning of new facilities include consideration of the ways in which heavy-flavor physics can be further explored.}
+
+\textbf{Heavy-flavor physics helps drive the search for BSM physics and the understanding of the SM. This will continue to be the case in the foreseeable future. To fully realize the potential of heavy-flavor physics, we believe the European Strategy for Particle Physics should include strong support for the experimental and theoretical research in this area, as well as the development of future facilities.}
 
 \setboolean{inbibliography}{true}
 \bibliographystyle{LHCb}
 \bibliography{standard}
- 
+
 \end{document}
